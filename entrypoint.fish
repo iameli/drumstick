@@ -5,6 +5,7 @@ ssh-keygen -b 4096 -t rsa -N "" -f ~/.ssh/id_rsa >/dev/null 2>&1
 
 set -Ux LC_ALL en_US.utf8
 set -Ux my_emoji 🍗
+set -Ux fish_greeting "Bwaaaaaaak!"
 
 # The internet tells me this line tells me whether I'm interactive. Cool!
 if isatty stdin
