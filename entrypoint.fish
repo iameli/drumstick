@@ -1,7 +1,17 @@
 #!/usr/bin/fish
 
 # Generate an SSH key at runtime
-ssh-keygen -b 4096 -t rsa -N "" -f ~/.ssh/id_rsa >/dev/null 2>&1
+if not test -e /root/.ssh/id_rsa
+  ssh-keygen -b 4096 -t rsa -N "" -f ~/.ssh/id_rsa >/dev/null 2>&1
+end
+
+if not test -L /root/.config/fish
+  mkdir -p /root/code
+  cd /root/code
+  git clone git@github.com:iameli/home.git
+  rm -rf /root/.config/fish
+  ln -s /root/code/home/fish /root/.config/fish
+end
 
 set -Ux LC_ALL en_US.utf8
 set -Ux my_emoji 🍗
