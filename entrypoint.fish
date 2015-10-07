@@ -8,7 +8,7 @@ end
 if not test -L /root/.config/fish
   mkdir -p /root/code
   cd /root/code
-  git clone git@github.com:iameli/home.git
+  git clone https://github.com/iameli/home.git
   rm -rf /root/.config/fish
   ln -s /root/code/home/fish /root/.config/fish
 end
