@@ -3,7 +3,7 @@ FROM ubuntu:wily
 WORKDIR /build
 
 RUN apt-get update && apt-get install -y \
-    curl dnsutils git fish vim sudo man
+    curl dnsutils git fish vim sudo man grc
 
 ADD init-env.fish /build/init-env.fish
 
