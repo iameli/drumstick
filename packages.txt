@@ -1,0 +1,10 @@
+curl
+dnsutils
+git
+fish
+vim
+sudo
+man
+grc
+traceroute
+iputils-ping

@@ -2,8 +2,8 @@ FROM ubuntu:wily
 
 WORKDIR /build
 
-RUN apt-get update && apt-get install -y \
-    curl dnsutils git fish vim sudo man grc
+ADD packages.txt /build/packages.txt
+RUN apt-get update && cat packages.txt | xargs apt-get install -y
 
 ADD init-env.fish /build/init-env.fish
 
