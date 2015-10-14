@@ -8,3 +8,5 @@ man
 grc
 traceroute
 iputils-ping
+nodejs
+jq
