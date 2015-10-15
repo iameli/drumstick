@@ -10,3 +10,9 @@ traceroute
 iputils-ping
 nodejs
 jq
+zip
+python3
+python-setuptools
+python-dev
+build-essential
+python-pip
