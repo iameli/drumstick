@@ -8,6 +8,8 @@ RUN apt-get update && cat packages.txt | xargs apt-get install -y
 ADD get-node.sh /build/get-node.sh
 RUN /build/get-node.sh
 
+RUN npm install -g babel
+
 RUN pip install awscli
 
 ADD init-env.fish /build/init-env.fish
