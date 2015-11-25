@@ -20,5 +20,8 @@ RUN fish /build/init-env.fish
 ADD entrypoint.fish /build/entrypoint.fish
 RUN chmod 755 /build/entrypoint.fish
 
+RUN curl -L -o /usr/bin/docker https://get.docker.com/builds/Linux/x86_64/docker-1.8.3 && \
+  chmod 755 /usr/bin/docker
+
 # Boot up... and do nothing at all.
 CMD /build/entrypoint.fish

@@ -36,3 +36,6 @@ libxcb-shm0
 libx264-146
 libass5
 htop
+mongodb
+rhc
+golang
