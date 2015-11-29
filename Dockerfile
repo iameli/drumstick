@@ -8,7 +8,7 @@ RUN apt-get update && cat packages.txt | xargs apt-get install -y
 ADD get-node.sh /build/get-node.sh
 RUN /build/get-node.sh
 
-RUN npm install -g babel webpack
+RUN npm install -g babel-cli webpack grunt-cli
 
 RUN pip install awscli
 
