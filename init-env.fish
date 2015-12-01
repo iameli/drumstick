@@ -7,4 +7,7 @@ cat /etc/passwd | sed s/"root:\/root"/"root:\/home\/root"/ > /tmp/newpasswd
 cat /tmp/newpasswd > /etc/passwd
 rm /tmp/newpasswd
 
+rm -rf /root
+ln -s /home/root /root
+
 locale-gen en_US.UTF-8
