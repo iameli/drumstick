@@ -1,7 +1,6 @@
 curl
 dnsutils
 git
-fish
 vim
 sudo
 man
@@ -39,3 +38,5 @@ htop
 mongodb
 rhc
 golang
+libncurses5-dev
+autoconf
