@@ -40,3 +40,4 @@ rhc
 golang
 libncurses5-dev
 autoconf
+graphviz

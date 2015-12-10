@@ -34,5 +34,11 @@ RUN chmod 755 /build/entrypoint.fish
 RUN curl -L -o /usr/bin/docker https://get.docker.com/builds/Linux/x86_64/docker-1.8.3 && \
   chmod 755 /usr/bin/docker
 
+RUN curl -Lo gcloud.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-90.0.0-linux-x86_64.tar.gz && \
+tar xzvf gcloud.tar.gz && \
+mkdir -p /opt && \
+mv google-cloud-sdk /opt/google-cloud-sdk && \
+rm -rf gcloud.tar.gz
+
 # Boot up... and do nothing at all.
 CMD /build/entrypoint.fish
