@@ -7,7 +7,6 @@ man
 grc
 traceroute
 iputils-ping
-nodejs
 jq
 zip
 python3
@@ -16,7 +15,7 @@ python-dev
 build-essential
 python-pip
 screen
-openjdk-7-jdk
+openjdk-8-jdk
 libxcb1
 libx11-6
 libva1
@@ -32,7 +31,8 @@ libmp3lame0
 libfreetype6
 libvdpau1
 libxcb-shm0
-libx264-146
+libx264-148
+libx264-dev
 libass5
 htop
 mongodb
@@ -45,3 +45,4 @@ redis-tools
 ruby-dev
 libopencore-amrnb0
 libopencore-amrwb0
+libzmq5
