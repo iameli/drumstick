@@ -41,3 +41,7 @@ golang
 libncurses5-dev
 autoconf
 graphviz
+redis-tools
+ruby-dev
+libopencore-amrnb0
+libopencore-amrwb0

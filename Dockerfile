@@ -19,7 +19,7 @@ RUN cd /tmp && \
 ADD get-node.sh /build/get-node.sh
 RUN /build/get-node.sh
 
-RUN npm install -g babel-cli webpack grunt-cli
+RUN npm install -g babel-cli webpack grunt-cli nodemon
 
 RUN pip install awscli
 
