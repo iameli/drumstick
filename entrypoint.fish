@@ -14,8 +14,15 @@ if not test -L /home/root/.config/fish
 end
 
 set -Ux LC_ALL en_US.utf8
-set -Ux my_emoji⭐️
 set -Ux fish_greeting "Bwaaaaaaak!"
+set -Ux KUBERNETES_PORT "tcp://10.0.0.1:443"
+set -Ux KUBERNETES_PORT_443_TCP "tcp://10.0.0.1:443"
+set -Ux KUBERNETES_PORT_443_TCP_ADDR "10.0.0.1"
+set -Ux KUBERNETES_PORT_443_TCP_PORT "443"
+set -Ux KUBERNETES_PORT_443_TCP_PROTO "tcp"
+set -Ux KUBERNETES_SERVICE_HOST "10.0.0.1"
+set -Ux KUBERNETES_SERVICE_PORT "443"
+set -Ux KUBERNETES_SERVICE_PORT_HTTPS "443"
 
 # The internet tells me this line tells me whether I'm interactive. Cool!
 if isatty stdin
