@@ -47,3 +47,4 @@ ruby-dev
 libopencore-amrnb0
 libopencore-amrwb0
 libzmq5
+apt-transport-https

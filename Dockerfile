@@ -8,6 +8,10 @@ RUN apt-get update && cat packages.txt | xargs apt-get install -y
 ADD get-node.sh /build/get-node.sh
 RUN /build/get-node.sh
 
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+  apt-get update && apt-get install -y yarn
+
 RUN npm install -g babel-cli webpack grunt-cli nodemon jest-cli
 
 RUN pip install awscli
