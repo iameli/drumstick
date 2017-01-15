@@ -27,7 +27,7 @@ RUN chmod 755 /build/entrypoint.fish
 ENV DRUMSTICK_DOCKER_VERSION 1.12.5
 
 RUN curl -L -o /build/docker.tgz https://get.docker.com/builds/Linux/x86_64/docker-$DRUMSTICK_DOCKER_VERSION.tgz && \
-  tar xzvf /build/docker.tgz && \
+  (cd /build && tar xzvf /build/docker.tgz) && \
   mv /build/docker/docker /usr/bin/docker && \
   rm -rf /build/docker /build/docker.tgz
 

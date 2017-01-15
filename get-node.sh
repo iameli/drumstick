@@ -1,5 +1,5 @@
 #!/bin/bash
-NODE_VERSION=`curl http://nodejs.org/dist/index.json | jq --raw-output "sort_by(.version)|reverse[0].version"`
+NODE_VERSION=`curl http://nodejs.org/dist/index.json | jq --raw-output "sort_by(.version) | reverse[] | .version" | grep '^v6' | head -1`
 set -ex \
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
